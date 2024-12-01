@@ -254,15 +254,6 @@
       {
         "description": "Document Analysis",
         "video": "/videos/po_document_analyse.webm"
-      },
-      {
-        "description": "Modular UI for each workflow and fully scalable. Makes use of presets to simplify settings."
-      },
-      {
-        "description": "Settings for slower performinc systems."
-      },
-      {
-        "description": "API allows direct interaction from other plugins."
       }
     ]
   },
