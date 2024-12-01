@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.0.0](https://github.com/Painatalman/jeremy-site/compare/v0.1.3...v1.0.0) (2024-12-01)
+
+
+### Bug Fixes
+
+* responsiveness and vtuber autoplay ([e39a34f](https://github.com/Painatalman/jeremy-site/commit/e39a34f7b311b051fee7a3bfed9ea7ec108d2273))
+
 ## [0.1.3](https://github.com/Painatalman/jeremy-site/compare/v0.1.2...v0.1.3) (2024-10-27)
 
 

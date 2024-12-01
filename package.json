@@ -1,11 +1,11 @@
 {
   "name": "ricardo-jeremias-site",
   "private": true,
-  "version": "0.1.3",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "cross-env TAILWIND_MODE=watch vite",
-    "build": "cross-env-shell TAILWIND_MODE=build BASE_URL=https://painatalman.github.io/jeremy-site/ vite build --base=https://painatalman.github.io/jeremy-site/",
+    "build": "cross-env-shell TAILWIND_MODE=build BASE_URL=https://eyeodin.github.io/eowebsite/ vite build --base=https://eyeodin.github.io/eowebsite/",
     "preview": "vite preview",
     "commit-with-cz": "cz",
     "prepare": "husky",

@@ -14,14 +14,14 @@
     </div>
   </div>
   {{#> sectionWrapper }}
-  <div class="bg-grey-100 px-32 py-4">
+  <div class="bg-grey-100 px-8 py-4 md:px-32">
     <h1>VTubers</h1>
     <p>
       Need a specially-crafted commentator for your YouTube video? Check out my
       VTubers, like AlisaDraws!
     </p>
   </div>
-  <div class="bg-grey-200 px-32 py-4">
+  <div class="bg-grey-200 px-8 py-4 md:px-32">
     <h2>VTubers available</h2>
     I currently only have AlisaDraws, but I'm working on other VTubers for
     specific purposes.
@@ -29,7 +29,13 @@
     <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
       {{#each vtubers}} {{#each this.demos}}
       <div class="mb-4">
-        <video class="w-full" src="{{this.video}}" controls></video>
+        <video
+          class="w-full"
+          src="{{this.video}}"
+          playsinline
+          data-autoplay-video
+          muted
+        ></video>
         <p class="mt-1">{{this.description}}</p>
       </div>
       {{/each}} {{/each}}

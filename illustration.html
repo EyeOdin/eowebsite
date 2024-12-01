@@ -18,16 +18,16 @@
   </div>
   {{/sectionWrapper}}
   <ul
-    class="flex flex-wrap items-center justify-center gap-x-1 gap-y-2 pb-4"
+    class="grid grid-cols-2 items-center justify-center gap-1 bg-grey-900 pb-4 md:grid-cols-3"
     id="illustrations"
   >
     {{#each other_illustrations}}
-    <li class="w-1/4">
+    <li class="bg-grey-200">
       <a data-illustration href="{{this.url}}">
         <img
           src="{{this.url}}"
           alt="{{this.alt}}"
-          class="inline-block aspect-square w-full object-contain"
+          class="inline-block aspect-square w-full border-grey-900 object-contain"
         />
       </a>
     </li>

@@ -24,13 +24,15 @@ function getIllustrationPageData() {
   )
     .filter(isImage)
     .map((illustration) => ({
-      url: `${process.env.BASE_URL}images/illustrations/featured/${illustration}`,
+      url: `${
+        process.env.BASE_URL ?? "/"
+      }images/illustrations/featured/${illustration}`,
       alt: "",
     }))[0];
   const localOtherIllustrations = readdirSync(resolve(localFolder))
     .filter(isImage)
     .map((illustration) => ({
-      url: `${process.env.BASE_URL}images/illustrations/${illustration}`,
+      url: `${process.env.BASE_URL ?? "/"}images/illustrations/${illustration}`,
       alt: "",
     }));
 

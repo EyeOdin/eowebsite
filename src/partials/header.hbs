@@ -1,5 +1,5 @@
 <header class='bg-grey-200 py-4 text-grey-900 fixed top-0 left-0 right-0 shadow-sm shadow-[#999] z-50'>
-  <div class='container max-w-container mx-auto max-lg:px-4 flex justify-between'>
+  <div class='container max-w-container mx-auto max-lg:px-4 flex flex-col md:flex-row max-md:gap-4 items-center justify-between'>
     <ul class='list-none flex flex-start items-center gap-2'>
       {{#each headerSocialNetworks}}
         <li><a href='{{this.url}}' aria-label='{{this.alt}}'>{{>(lookup . 'svg_path') class="h-4 w-auto fill-grey-900"}}</a></li>
