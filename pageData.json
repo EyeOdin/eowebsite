@@ -20,10 +20,6 @@
         "name": "AlisaDraws",
         "demos": [
           {
-            "description": "Full body",
-            "video": "/videos/vtuber-alisadraws/body.webm"
-          },
-          {
             "description": "Head",
             "video": "/videos/vtuber-alisadraws/head.webm"
           },
@@ -42,6 +38,10 @@
           {
             "description": "Lips",
             "video": "/videos/vtuber-alisadraws/lips.webm"
+          },
+          {
+            "description": "Full body",
+            "video": "/videos/vtuber-alisadraws/body.webm"
           },
           {
             "description": "Shoulders",
