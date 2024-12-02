@@ -3,7 +3,7 @@
   class="{{#if (is_even @index)}}bg-grey-200{{else}}bg-grey-100{{/if}} px-4 md:px-32 py-4"
 >
   {{#if this.video}}
-  <video class="w-full" src="{{this.video}}" controls></video>
+  <video class="w-full" src="{{this.video}}" playsinline muted data-autoplay-video></video>
   {{/if}} {{#if this.description}}
   <p {{#if this.video}}class="mt-8"{{/if}}>{{this.description}}</p>
   {{/if}}
