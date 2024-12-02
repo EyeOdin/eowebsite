@@ -29,21 +29,13 @@ function getIllustrationPageData() {
       }images/illustrations/featured/${illustration}`,
       alt: "",
     }))[0];
-  const localOtherIllustrations = readdirSync(resolve(localFolder))
-    .filter(isImage)
-    .map((illustration) => ({
-      url: `${process.env.BASE_URL ?? "/"}images/illustrations/${illustration}`,
-      alt: "",
-    }));
 
   return {
     featured_illustration: configuredFeaturedIllustration?.url
       ? configuredFeaturedIllustration
       : localFeaturedIllustration,
-    other_illustrations: [
-      ...localOtherIllustrations,
-      ...configuredOtherIllustrations,
-    ],
+    other_illustrations: configuredOtherIllustrations,
+    illustration_bg: illustrationPageData?.illustration_bg ?? "",
   };
 }
 

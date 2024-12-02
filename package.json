@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "start": "npm run dev",
     "dev": "cross-env TAILWIND_MODE=watch vite",
     "build": "cross-env-shell TAILWIND_MODE=build BASE_URL=https://eyeodin.github.io/eowebsite/ vite build --base=https://eyeodin.github.io/eowebsite/",
     "preview": "vite preview",
