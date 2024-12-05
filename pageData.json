@@ -11,6 +11,7 @@
       "alt": ""
     },
     "other_illustrations": [
+      { "url": "/images/illustrations/25_half_d3mon.png", "alt": "" }
       { "url": "/images/illustrations/01_fabulous_dog.png", "alt": "" },
       { "url": "/images/illustrations/02_boxer.png", "alt": "" },
       { "url": "/images/illustrations/03_kettle.png", "alt": "" },
@@ -26,10 +27,7 @@
       { "url": "/images/illustrations/13_MorganaFaye.png", "alt": "" },
       { "url": "/images/illustrations/14_atunika.png", "alt": "" },
       { "url": "/images/illustrations/15_Melancclie.png", "alt": "" },
-      {
-        "url": "/images/illustrations/16_Tsukumo_Sana_Graduation.jpg",
-        "alt": ""
-      },
+      { "url": "/images/illustrations/16_Tsukumo_Sana_Graduation.jpg", "alt": "" },
       { "url": "/images/illustrations/17_apples.png", "alt": "" },
       { "url": "/images/illustrations/18_Onions.png", "alt": "" },
       { "url": "/images/illustrations/19_mel.png", "alt": "" },
