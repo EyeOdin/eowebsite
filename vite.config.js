@@ -13,8 +13,12 @@ function getIllustrationPageData() {
   const illustrationPageData = pageData["/illustration.html"];
   const configuredFeaturedIllustration =
     illustrationPageData?.featured_illustration;
-  const configuredOtherIllustrations =
-    illustrationPageData?.other_illustrations ?? [];
+  const configuredOtherIllustrations = (
+    illustrationPageData?.other_illustrations ?? []
+  ).map((illustration) => ({
+    url: `${process.env.BASE_URL}${illustration.url}`,
+    alt: illustration?.alt ?? "",
+  }));
 
   const localFolder = "public/images/illustrations";
   const featuredLocalFolder = resolve(localFolder, "featured");
@@ -32,7 +36,10 @@ function getIllustrationPageData() {
 
   return {
     featured_illustration: configuredFeaturedIllustration?.url
-      ? configuredFeaturedIllustration
+      ? {
+          url: `${process.env.BASE_URL}${configuredFeaturedIllustration.url}`,
+          alt: configuredFeaturedIllustration.alt ?? "",
+        }
       : localFeaturedIllustration,
     other_illustrations: configuredOtherIllustrations,
     illustration_bg: illustrationPageData?.illustration_bg ?? "",
