@@ -112,7 +112,7 @@
   "/commissions/index.html": {
     "title": "Commissions | EyeOdin's Portfolio",
     "description": "Prices for my services",
-    "areCommissionsOpen": true,
+    "areCommissionsOpen": false,
     "commissionStatusLinks": [
       {
         "url": "tips/index.html",
